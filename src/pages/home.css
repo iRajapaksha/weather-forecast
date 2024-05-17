@@ -1,0 +1,104 @@
+/* home.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1400px; /* Optional: max width */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Optional: add some background to the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add some shadow */
+    border-radius: 8px; /* Optional: rounded corners */
+  }
+  
+  .top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px; /* Optional: space between sections */
+}
+
+
+.top p, .top h2 {
+    margin: 0;
+    /* No space between "Today" and "Colombo" */
+}
+.top h2{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.weather-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+    gap: 10px; /* Space between the icon and text */
+    margin-top: 0; /* Space between temperature and weather description */
+}
+
+.temp-data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.temp-data h1{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: bold;
+  color: #ff5722;
+  
+}
+
+.weather-description p {
+    margin: 0;
+   
+}
+
+  
+  .weather-cards-container {
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    gap: 16px; /* Space between items */
+  }
+  
+  .weather-description {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the icon and text */
+  }
+  
+  .view-more {
+    cursor: pointer;
+    padding: 10px 20px;
+    
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px; /* Space above the button */
+  }
+  
