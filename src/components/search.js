@@ -7,23 +7,10 @@ import './search.css'
 
 
 function Search({fetchWeatherData}) {
-  const [data, setData] = useState({});
-  const [location, setLocation] = useState('');
   const [latitude, setLatitude] = useState('');
   const [longitude, setLongitude] = useState('');
 
-//   const fetchData = () => {
-//     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=af54ae1bae07a9b3aa14f7299ab99b9e`;
 
-//     axios.get(url)
-//       .then((response) => {
-//         setData(response.data);
-//         console.log("Weather data:", response.data);
-//       })
-//       .catch((error) => {
-//         console.error("Error fetching weather data:", error);
-//       });
-//   };
 
 
   const handleLatitudeChange = (event) => {

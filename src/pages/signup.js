@@ -16,12 +16,12 @@ function SignUp() {
             console.log("Response data: " + res.data);
             if (res.data === "exists") {
                 console.log("User exists");
-                alert("User already signedup. Please login") // Navigate to the home page if the user exists
+                alert("User already signedup. Please login") 
             } else if (res.data === "notexists") {
                 alert("User created successfully");
-                setEmail(''); // Clear the email field
-                setPassword(''); // Clear the password field
-                history('/home'); // Navigate to the home page if the user exists
+                setEmail(''); 
+                setPassword(''); 
+                history('/home'); 
 
             }
         } catch (e) {

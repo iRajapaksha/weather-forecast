@@ -4,11 +4,11 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 400px; /* Optional: max width */
+    max-width: 400px; 
     padding: 20px;
-    background: rgba(255, 255, 255, 0.25);/* Optional: add some background to the container */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add some shadow */
-    border-radius: 8px; /* Optional: rounded corners */
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
   }
   .signup:hover {
     transform: translateY(-5px);
@@ -50,16 +50,16 @@
     color: #0e0e0e;
 }
 .form button:hover {
-    background: #858585; /* Darker blue on hover */
+    background: #858585; 
 }
 
 .link {
-    color: #007BFF; /* Blue link color */
+    color: #007BFF; 
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .link:hover {
-    color: #0056b3; /* Darker blue on hover */
+    color: #0056b3; 
 }
