@@ -1,6 +1,6 @@
-import axios from "axios";
+
 import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate,  } from "react-router-dom";
 import './login.css'
 
 function Login() {
@@ -9,24 +9,17 @@ function Login() {
   const [password, setPassword] = useState("");
 
 async function submit(e) {
-    e.preventDefault();
-    try {
-    await axios
-        .post("http://localhost:3001/", { email, password })
-        .then((res) => {
-        if (res.data === "exists") {
-            history("/home");
-        } else if (res.data === "notexists") {
-            alert("User doesn't exists");
-        }
-        })
-        .catch((e) => {
-          alert("Wrong details");
-          console.log(e);
-        });
-    } catch (e) {
-      console.log(e);
+
+  try{
+    if( email === 'abc@gmail.com' && password === 'abc123'){
+      history("/home")
+    }else{
+      alert("Wrong email or password. Try again.")
     }
+
+  }catch(e){
+    console.log(e);
+  }
   }
   return (
     <div className="login">
@@ -53,7 +46,7 @@ async function submit(e) {
         />
         <button type="submit" onClick={submit} >Login</button>
       </form>
-      <p>Don't have an account? <Link to="/signup" className="link">Signup Here</Link></p>
+
 
     </div>
   );
